@@ -1,6 +1,6 @@
 # News App
 
-## Android + Kotlin + Retrofit + RxJava + GoogleSignIn + NewsApi
+## Android + Kotlin + Retrofit + RxJava + Room +GoogleSignIn + NewsApi
 
 # Documentation
 
