@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_blue_pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Hello,\n Let's get you started!"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:gravity="center"
+            android:fontFamily="@font/playfair_display"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizeLargeX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnSignIn"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/button_bg_blue"
+            android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_margin="@dimen/layout_between_padding"
+                android:src="@drawable/ic_google"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:fontFamily="@font/playfair_display"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeLarge"
+                android:gravity="center"
+                android:text="@string/google_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/playfair_display"
+            android:textColor="@color/white"
+            android:text="Terms of use. Privacy policy."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
