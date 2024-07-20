@@ -4,8 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="325dp"
     android:layout_height="210dp"
-    android:layout_marginHorizontal="@dimen/vertical_margin_padding"
-    android:layout_marginTop="@dimen/layout_between_padding"
     app:cardCornerRadius="5dp"
     android:elevation="50dp"
     app:cardBackgroundColor="@color/white"
@@ -31,7 +29,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_marginTop="@dimen/layout_between_padding_small"
-            android:layout_height="75dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -44,17 +42,37 @@
                     tools:text="TITIK TEMU CAFE - CIPETE"
                     android:textSize="12sp"
                     android:textStyle="bold"
+                    android:drawableEnd="@drawable/ic_verified"
+                    android:drawablePadding="@dimen/layout_between_padding"
                     android:layout_marginTop="@dimen/layout_between_padding_small"
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-                <TextView
-                    android:id="@+id/txtTime"
-                    tools:text="08:00 - 22:00"
-                    android:textSize="10sp"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtTime"
+                        tools:text="08:00 - 22:00"
+                        android:textSize="10sp"
+                        app:drawableStartCompat="@drawable/ic_time"
+                        android:drawablePadding="@dimen/layout_between_padding_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtRange"
+                        tools:text="2.4 km"
+                        android:layout_marginStart="@dimen/layout_between_padding"
+                        android:textSize="10sp"
+                        android:drawablePadding="@dimen/layout_between_padding_small"
+                        app:drawableStartCompat="@drawable/ic_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/txtLocation"
@@ -64,6 +82,8 @@
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -79,7 +99,10 @@
                     tools:text="4.8"
                     android:textColor="@color/black_90"
                     android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_rate"
+                    android:drawablePadding="@dimen/layout_between_padding_small"
                     android:gravity="center"
+                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_weight="0.5"
                     android:layout_height="0dp"/>

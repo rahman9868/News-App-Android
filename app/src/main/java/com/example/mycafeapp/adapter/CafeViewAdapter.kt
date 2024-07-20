@@ -1,5 +1,6 @@
 package com.example.mycafeapp.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -11,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.mycafeapp.R
 import com.example.mycafeapp.entity.Cafe
-import com.example.mycafeapp.view.DetailCafeActivity
+import com.example.mycafeapp.view.detail.DetailCafeActivity
 
 class CafeViewAdapter() : RecyclerView.Adapter<CafeViewAdapter.CafeViewHolder>(){
 
@@ -43,9 +44,11 @@ class CafeViewAdapter() : RecyclerView.Adapter<CafeViewAdapter.CafeViewHolder>()
         val location : TextView = itemView.findViewById(R.id.txtLocation)
         val rate : TextView = itemView.findViewById(R.id.txtRate)
         val reviews : TextView = itemView.findViewById(R.id.txtReviews)
+        val range : TextView = itemView.findViewById(R.id.txtRange)
         val pictCafe : ImageView = itemView.findViewById(R.id.ivPictCafe)
         val item : View = itemView
 
+        @SuppressLint("SetTextI18n")
         fun bind(data: Cafe){
             val block: (View).() -> Unit = {
 
@@ -56,6 +59,7 @@ class CafeViewAdapter() : RecyclerView.Adapter<CafeViewAdapter.CafeViewHolder>()
                 time.text = data.openTime +" - "+ data.closeTime
                 rate.text = data.rate.toString()
                 reviews.text = data.countRate.toString()
+                range.text = data.rangeLocation
 
                 this.setOnClickListener {
                     showDetailCafe(context, data)

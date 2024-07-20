@@ -8,6 +8,7 @@ import com.example.mycafeapp.R
 import com.example.mycafeapp.adapter.CafeViewAdapter
 import com.example.mycafeapp.util.DummyUtil
 import kotlinx.android.synthetic.main.activity_category_list.rvListCafe
+import kotlinx.android.synthetic.main.activity_category_list.txtLabel
 import kotlinx.android.synthetic.main.activity_category_list.viewProfile
 
 class CategoryListActivity : AppCompatActivity() {
@@ -17,6 +18,12 @@ class CategoryListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_category_list)
         getListCafe()
         viewProfile()
+        setLabel()
+    }
+
+    private fun setLabel() {
+        val label = intent?.getStringExtra(DETAIL_KEY)
+        label?.let { txtLabel.text = it }
     }
 
     private fun viewProfile() {

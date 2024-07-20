@@ -17,7 +17,8 @@ object DummyUtil {
             type = "Coffee Shop",
             openTime = "07.00",
             closeTime = "23.00",
-            picture = R.drawable.pic_cafe_1
+            picture = R.drawable.pic_cafe_1,
+            rangeLocation = "2.4 km"
         ),
         Cafe(
             id = 2,
@@ -29,7 +30,8 @@ object DummyUtil {
             type = "Coffee Shop",
             openTime = "07.00",
             closeTime = "23.00",
-            picture = R.drawable.pic_cafe_1
+            picture = R.drawable.pic_cafe_1,
+            rangeLocation = "2.4 km"
         ),
         Cafe(
             id = 3,
@@ -41,7 +43,8 @@ object DummyUtil {
             type = "Coffee Shop",
             openTime = "07.00",
             closeTime = "23.00",
-            picture = R.drawable.pic_cafe_1
+            picture = R.drawable.pic_cafe_1,
+            rangeLocation = "2.4 km"
         ),
         Cafe(
             id = 4,
@@ -53,7 +56,8 @@ object DummyUtil {
             type = "Coffee Shop",
             openTime = "07.00",
             closeTime = "23.00",
-            picture = R.drawable.pic_cafe_1
+            picture = R.drawable.pic_cafe_1,
+            rangeLocation = "2.4 km"
         ),
         Cafe(
             id = 5,
@@ -65,7 +69,8 @@ object DummyUtil {
             type = "Coffee Shop",
             openTime = "07.00",
             closeTime = "23.00",
-            picture = R.drawable.pic_cafe_1
+            picture = R.drawable.pic_cafe_1,
+            rangeLocation = "2.4 km"
         )
     )
     fun getListCafe(): List<Cafe>{
@@ -73,6 +78,8 @@ object DummyUtil {
     }
 
     fun recommendedCafe() =  listCafe.first()
+
+    fun getDetailCafeById(id: Int) = listCafe.find { it.id == id }
 
     fun getCategory(): List<Category> {
         return listOf(

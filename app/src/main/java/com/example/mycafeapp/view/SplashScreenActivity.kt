@@ -12,11 +12,11 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-
+        val duration = 1000L
         val progressBar: LinearProgressIndicator = findViewById(R.id.progress_bar)
 
         val animator = ValueAnimator.ofInt(0, 100)
-        animator.duration = 3000L
+        animator.duration = duration
         animator.addUpdateListener { animation ->
             progressBar.progress = animation.animatedValue as Int
         }
@@ -26,6 +26,6 @@ class SplashScreenActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000L)
+        }, duration)
     }
 }

@@ -10,7 +10,8 @@ data class Cafe(
     val rate: Double,
     val countRate: Int,
     val type: String,
-    val picture: Int
+    val picture: Int,
+    val rangeLocation: String
 )
 
 data class Category(

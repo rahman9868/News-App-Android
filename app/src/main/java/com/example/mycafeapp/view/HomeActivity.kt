@@ -41,5 +41,6 @@ class HomeActivity : AppCompatActivity() {
         txtTime.text = recommended.openTime +" - "+ recommended.closeTime
         txtRate.text = recommended.rate.toString()
         txtReviews.text = recommended.countRate.toString()
+        txtRange.text = recommended.rangeLocation
     }
 }

@@ -19,4 +19,8 @@
         <item name="colorButtonNormal">#673AB7</item>
     </style>
 
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
 </resources>
