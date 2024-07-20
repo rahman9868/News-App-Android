@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Cafe App</string>
+    <string name="app_name">Coffee Go</string>
     <string name="add_bookmark">Added to Bookmarks</string>
     <string name="remove_bookmark">Removed from Bookmarks</string>
     <string name="google_sign_in">Sign in with Google</string>
