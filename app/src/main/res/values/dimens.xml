@@ -2,7 +2,9 @@
 <resources>
     <dimen name="textSizeLargeX">24sp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_large">32dp</dimen>
     <dimen name="layout_between_padding">8dp</dimen>
+    <dimen name="layout_between_padding_small">4dp</dimen>
     <dimen name="textSizeLarge">16sp</dimen>
     <dimen name="margin_padding">10dp</dimen>
     <dimen name="bg_profile_image">100dp</dimen>

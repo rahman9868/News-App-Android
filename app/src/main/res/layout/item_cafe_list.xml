@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="325dp"
+    android:layout_height="210dp"
+    android:layout_marginHorizontal="@dimen/vertical_margin_padding"
+    android:layout_marginTop="@dimen/layout_between_padding"
+    app:cardCornerRadius="5dp"
+    android:elevation="50dp"
+    app:cardBackgroundColor="@color/white"
+    android:theme="@style/AppTheme"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/layout_between_padding"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivPictCafe"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/layout_between_padding"
+            tools:src="@drawable/pic_cafe_1"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/layout_between_padding_small"
+            android:layout_height="75dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    tools:text="TITIK TEMU CAFE - CIPETE"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/layout_between_padding_small"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    tools:text="08:00 - 22:00"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    tools:text="Jl. Cipete Raya No. 66, Jakarta Selatan"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/txtRate"
+                    tools:text="4.8"
+                    android:textColor="@color/black_90"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/txtReviews"
+                    tools:text="2.511"
+                    android:textColor="@color/black_90"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
