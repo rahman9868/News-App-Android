@@ -1,8 +1,7 @@
-package com.example.mynewsapp
+package com.example.mycafeapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mycafeapp.R
 
 class MainActivity : AppCompatActivity() {
 

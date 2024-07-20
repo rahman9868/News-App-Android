@@ -2,8 +2,8 @@ package com.example.mycafeapp.view
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mycafeapp.R
 import com.example.mycafeapp.adapter.CategoryViewAdapter
 import com.example.mycafeapp.util.DummyUtil

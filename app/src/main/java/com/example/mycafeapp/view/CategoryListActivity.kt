@@ -1,13 +1,14 @@
 package com.example.mycafeapp.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mycafeapp.R
 import com.example.mycafeapp.adapter.CafeViewAdapter
 import com.example.mycafeapp.util.DummyUtil
-import kotlinx.android.synthetic.main.activity_category_list.*
+import kotlinx.android.synthetic.main.activity_category_list.rvListCafe
+import kotlinx.android.synthetic.main.activity_category_list.viewProfile
 
 class CategoryListActivity : AppCompatActivity() {
     lateinit var adapter: CafeViewAdapter
